@@ -49,7 +49,7 @@ print("\n----- RESULT -----")
 
 if risk_score >= 3:
     print("Transaction Status: RISKY")
-    print("Advice: Do NOT proceed without verification!")
+    print("Advice: Do not proceed without verification!")
 
     # Simple confirmation (realistic touch)
     choice = input("Do you still want to continue? (yes/no): ")
@@ -62,4 +62,4 @@ else:
     print(" Transaction Status: SAFE")
     print("Transaction Successful!")
 
-print("\nThank you for using the system!")
+print("\nThank you for using system!")
