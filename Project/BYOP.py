@@ -25,30 +25,30 @@ risk_score = 0
 
 # Rule 1: Unknown receiver
 if receiver_upi not in trusted_upi:
-    print("⚠️ Unknown UPI ID")
+    print("Unknown UPI ID")
     risk_score = risk_score + 2
 
 # Rule 2: Large amount
 if amount > 5000:
-    print("⚠️ High amount transaction")
+    print("High amount transaction")
     risk_score = risk_score + 2
 
 # Rule 3: Too many transactions
 if num_transactions > 3:
-    print("⚠️ Too many transactions in short time")
+    print("Too many transactions in short time")
     risk_score = risk_score + 1
 
 # Extra beginner-level realistic rule
 # Rule 4: Suspicious UPI pattern
 if "123" in receiver_upi or receiver_upi.endswith("@ok"):
-    print("⚠️ Suspicious UPI pattern")
+    print("Suspicious UPI pattern")
     risk_score = risk_score + 1
 
 # Final decision
 print("\n----- RESULT -----")
 
 if risk_score >= 3:
-    print("🚨 Transaction Status: RISKY")
+    print("Transaction Status: RISKY")
     print("Advice: Do NOT proceed without verification!")
 
     # Simple confirmation (realistic touch)
