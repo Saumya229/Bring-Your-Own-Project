@@ -18,8 +18,8 @@ This project takes transaction details as input and analyzes them using basic ru
    ~ Suspicious UPI ID patterns
 * Assigns a risk score based on conditions
 * Displays:
-   ✅ Safe Transaction
-   🚨 Risky Transaction
+   Safe Transaction
+   Risky Transaction
 * Provides user confirmation for risky transactions
 
 # Technologies Used
@@ -56,13 +56,13 @@ How many transactions in last 5 minutes? 4
 
 Checking transaction...
 
-⚠️ Unknown UPI ID
-⚠️ High amount transaction
-⚠️ Too many transactions in short time
-⚠️ Suspicious UPI pattern
+Unknown UPI ID
+High amount transaction
+Too many transactions in short time
+Suspicious UPI pattern
 
 ----- RESULT -----
-🚨 Transaction Status: RISKY
+ Transaction Status: RISKY
 Advice: Do NOT proceed without verification!
 
 # Future Improvements
